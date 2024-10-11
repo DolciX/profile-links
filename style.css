@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to left, #0094C6, #533A71);
+    background-size:;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0a2472c4;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+a:hover{
+    background-color:#0a24729b;
+    
+}
+
+p{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+section{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    padding: 45px;
+    margin: 50x;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 40%;
+    width: 40%;
+    
+    
+}
+
+header h1{
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header h2{
+    font-weight: lighter;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 5px;
+    color: rgb(226, 222, 212);
+    font-size: 1rem;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 550px){
+    main > a{
+        width: 70vw;
+        
+    }
+    body{
+        height: 100%;
+        padding-top: 10%;
+    }
+    section{
+        width: 80%;
+    }
+    main a{
+        height: 4vh;
+    }
+    section{
+        height: 88vh;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+    header p{
+        font-size: 1rem;
+        padding-top: 2px;
+    }
+    header h2{
+        font-size: 1rem;
+    }
+    header h1{
+        font-size: 1.2rem;
+    }
+    header img{
+        width: 70%;
+        height: 50%;
+    }
+}
